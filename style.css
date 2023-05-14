@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.navigation a,
+footer a {
+    text-decoration: none;
+    color: inherit;
+    margin: 100px;
+}
+
+.navigation a:hover,
+footer a:hover {
+    color: rgb(14, 37, 14);
+}
+
+.navigation input:focus,
+.form-control input:focus {
+    outline-color: rgb(14, 37, 14);
+    outline-style: solid;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-search {
+    display: flex;
+}
+
+.site-search input,
+.form-control {
+    padding: 5px;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.site-search button {
+    background: #d6f9c2;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    color: #508930;
+    width: 30px;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 3.3rem;
+}
+
+i {
+    color: #8ccb68;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+#shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.shop-item {
+    width: calc((100% - 10px)/4);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-item:hover {
+    background-color: #d3d3d3;
+}
+
+.shop-item img {
+    width: 100%;
+    height: 300px;
+    flex-shrink: 3;
+    object-fit: cover;
+}
+
+.shop-item .content {
+    padding: 10px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.item__title {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.item__description {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.item__footer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.item__price {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.item__buy,
+.btn {
+    height: 30px;
+    padding: 0 15px;
+    border-radius: 100px;
+    border: solid 2px #8ccb68;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all .3s;
+    color: #8ccb68;
+}
+
+.item__buy:hover,
+.btn:hover {
+    background-color: #d3d3d3;
+}
+
+#nothing-found {
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+}
+
+.order-title {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.cart-total {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.total-price,
+.rouble {
+    color: #EB5A1E;
+}
+
+.form-control {
+    display: block;
+    margin: 15px 0;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo-copy {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    font-size: 2rem;
+}

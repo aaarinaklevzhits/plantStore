@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин комнатных растений «PlantStore»</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <div class="site-search">
+                        <input type="search" id="search-input" placeholder="Поиск по сайту">
+                        <button type="button" id="search-btn" class="fa fa-search"></i>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="logo">PlantStore</a>
+                </li>       
+                <li>
+                    <div class="shopping-cart">
+                        <a href="#shopping-cart"><i class="fas fa-shopping-cart" aria-hidden="true"></i> Корзина</a>
+                    </div> 
+                </li>       
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="filters">
+            <div class="filters-sort">
+                <label for="sort">Сортировка:</label>
+                <select name="sort" id="sort">
+                    <option selected value="alphabet">По алфавиту</option>
+                    <option value="expensive">По убыванию цены</option>
+                    <option value="cheap">По возрастанию цены</option>
+                </select>
+            </div>
+        </div>
+
+        <section id="shop-items"></section>
+    
+        <p id="nothing-found"></p>
+    
+        <section id="shopping-cart">		
+			<div class="order-body">
+				<h5 class="order-title">Ваш заказ</h4>
+				<p class="empty-cart">Корзина пуста</p>
+				<div class="cart-wrapper"></div>
+					<div class="cart-total">
+						<span class="sum">Итого:</span>
+						<span class="total-price">0</span>
+						<span class="rouble">руб</span>
+                    </div>    
+				</div>
+            </div>
+			
+			<div class="order-form">
+				<h5 class="order-title">Оформить заказ</h4>
+				<form>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Ваш номер телефона">
+					</div>
+					<button type="submit" class="btn">Заказать</button>
+                        </form>
+                    </div>
+                    </section>
+                    </main>
+
+                    <footer id="contacts">
+                        <a href="#top" class="logo-copy">PlantStore</a>
+                    </footer>
+
+                    <template id="item-template">
+        <div class="shop-item">
+            <img class="item__image" src="">
+            <div class="content">
+                <h2 class="item__title"></h2>
+                <p class="item__description"></p>
+                <div class="item__footer">
+                    <span class="item__price"></span>                     
+                    <button type="submit" class="item__buy"><i class="fas fa-shopping-cart" aria-hidden="true"></i> в корзину </button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+                    <script src="script.js"></script>
+</body>
+
+</html>
